@@ -35,6 +35,6 @@ SkyCast Pro is a high-performance, widescreen weather analytics dashboard built 
 * **Zero Dependencies:** Built entirely without frontend frameworks (React/Vue) to demonstrate a strong mastery of DOM manipulation and Vanilla JS architecture.
 
 ## 👨‍💻 Run Locally
-1. Clone the repository: `git clone https://github.com/YOUR_GITHUB_USERNAME/skycast-weather-dashboard.git`
+1. Clone the repository: `git clone https://github.com/Sukeertjoshi-8/skycast-weather-dashboard.git`
 2. Open the folder in your code editor.
 3. Run `index.html` via Live Server. No build steps or package managers required.
