@@ -25,7 +25,7 @@ SkyCast Pro automatically shifts its visual language based on the local time and
 </table>
 
 ## 🚀 Live Demo
-[View the Live Dashboard Here] ( skycast-weather-0.netlify.app )
+[View the Live Dashboard Here] ( [skycast-weather-0.netlify.app](https://skycast-weather-0.netlify.app/) )
 
 ## ✨ Core Features
 * **Dynamic Sky Engine:** The UI background and celestial bodies (Sun/Moon) physically react to the real-time weather codes and exact local time of the searched city.
