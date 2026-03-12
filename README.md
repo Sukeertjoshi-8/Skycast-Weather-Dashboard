@@ -4,14 +4,25 @@ SkyCast Pro is a high-performance, widescreen weather analytics dashboard built 
 
 ## 📸 Interface Preview
 
-| Desktop View | Mobile Responsive |
-| :---: | :---: |
-| ![Desktop Dashboard](morning.preview.png) |
+## 🌗 Dynamic Environment Engine
+SkyCast Pro automatically shifts its visual language based on the local time and weather of the target city.
 
-| Weather Variations |
-| :---: |
-| ![Night Theme](night-preview.png) |   | ![Morning Theme](morning.preview.png) |   | ![Evening Theme](evening-preview.png) |
-
+<table style="width: 100%;">
+  <tr>
+    <td align="center" width="33%">
+      <img src="morning-preview.png" alt="Morning Theme" style="border-radius: 10px;" /><br />
+      <b>Morning</b>
+    </td>
+    <td align="center" width="33%">
+      <img src="evening-preview.png" alt="Evening Theme" style="border-radius: 10px;" /><br />
+      <b>Evening</b>
+    </td>
+    <td align="center" width="33%">
+      <img src="night-preview.png" alt="Night Theme" style="border-radius: 10px;" /><br />
+      <b>Night</b>
+    </td>
+  </tr>
+</table>
 
 ## 🚀 Live Demo
 [View the Live Dashboard Here] ( skycast-weather-0.netlify.app )
