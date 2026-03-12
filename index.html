@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkyCast | Pro Weather Dashboard</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="app-body">
+    
+    <div id="sky-layer">
+        <div id="celestial-body"></div>
+        <div id="weather-fx"></div>
+    </div>
+
+    <div class="container">
+        <header>
+            <h1>SkyCast</h1>
+            <p>Immersive Data & Analytics</p>
+        </header>
+
+        <div class="search-box">
+            <input type="text" id="city-input" placeholder="Enter city name...">
+            <button id="search-btn">Search</button>
+        </div>
+
+        <div id="loader" class="loader">Syncing with satellites...</div>
+
+        <div class="dashboard-wrapper" id="weather-display" style="display: none;">
+            
+            <div class="main-column weather-card">
+                <div class="current-weather">
+                    <h2 id="city-name">--</h2>
+                    <div class="temp-container">
+                        <span id="main-emoji"></span>
+                        <span class="temp-text"><span id="temperature">--</span>°C</span>
+                    </div>
+                    <p id="description">--</p>
+                    <p id="feels-like" class="feels-like-text">Feels like --°C</p>
+                </div>
+                
+                <hr class="divider">
+
+                <div class="widget-grid">
+                    <a id="link-time" href="#" target="_blank" class="widget">
+                        <h4>Local Time</h4>
+                        <p id="local-time-data" class="main-data">--:--</p>
+                        <p id="local-time-sub" class="subtext">Live clock</p>
+                    </a>
+                    <a id="link-wind" href="#" target="_blank" class="widget">
+                        <h4>Wind</h4>
+                        <div class="wind-flex">
+                            <div class="compass-container">
+                                <div class="compass-box"><div id="compass-arrow">↑</div></div>
+                                <span id="wind-dir-text">--</span>
+                            </div>
+                            <div>
+                                <p id="wind-data" class="main-data">--</p>
+                                <p id="wind-sub" class="subtext">--</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a id="link-rain" href="#" target="_blank" class="widget">
+                        <h4>Rain Chance</h4>
+                        <p id="rain-data" class="main-data">--</p>
+                        <p id="rain-sub" class="subtext">--</p>
+                    </a>
+                    <a id="link-uv" href="#" target="_blank" class="widget">
+                        <h4>UV Index</h4>
+                        <p id="uv-data" class="main-data">--</p>
+                        <p id="uv-sub" class="subtext">--</p>
+                    </a>
+                    <a id="link-aqi" href="#" target="_blank" class="widget">
+                        <h4>Air Quality</h4>
+                        <p id="aqi-data" class="main-data">--</p>
+                        <p id="aqi-sub" class="subtext">--</p>
+                    </a>
+                    <div class="widget dual-widget">
+                        <div class="half">
+                            <h4>Sunrise</h4>
+                            <p id="sunrise-data" class="main-data sm-text">--</p>
+                        </div>
+                        <div class="half">
+                            <h4>Sunset</h4>
+                            <p id="sunset-data" class="main-data sm-text">--</p>
+                        </div>
+                    </div>
+                </div>
+
+                <hr class="divider">
+
+                <div class="charts-scroll-wrapper">
+                    <div class="chart-section">
+                        <h3>Previous 7 Days</h3>
+                        <div class="chart-container"><canvas id="pastChart"></canvas></div>
+                    </div>
+                    <div class="chart-section">
+                        <h3>Upcoming 7 Days</h3>
+                        <div class="chart-container"><canvas id="futureChart"></canvas></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="side-column">
+                
+                <div class="side-card life-index">
+                    <h3>Life Index</h3>
+                    <div class="life-item">
+                        <span class="icon">👕</span>
+                        <div>
+                            <h4>Clothing</h4>
+                            <p id="idx-clothes">--</p>
+                        </div>
+                    </div>
+                    <div class="life-item">
+                        <span class="icon">🛵</span>
+                        <div>
+                            <h4>Rides</h4>
+                            <p id="idx-rides">--</p>
+                        </div>
+                    </div>
+                    <div class="life-item">
+                        <span class="icon">🎮</span>
+                        <div>
+                            <h4>Activities</h4>
+                            <p id="idx-sports">--</p>
+                        </div>
+                    </div>
+                    <div class="life-item">
+                        <span class="icon">🤧</span>
+                        <div>
+                            <h4>Health</h4>
+                            <p id="idx-health">--</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="side-card">
+                    <h3>Similar Global Cities</h3>
+                    <div id="similar-cities-container">
+                        <p style="opacity: 0.7; font-size: 0.9rem;">Scanning globe...</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <footer id="app-footer" style="display: none;">
+            <p>Need support? Contact <a href="mailto:sukeertjoshi@gmail.com">sukeertjoshi@gmail.com</a></p>
+        </footer>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
