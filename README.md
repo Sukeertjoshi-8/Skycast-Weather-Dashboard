@@ -10,7 +10,7 @@ SkyCast Pro automatically shifts its visual language based on the local time and
 <table style="width: 100%;">
   <tr>
     <td align="center" width="33%">
-      <img src="morning-preview.png" alt="Morning Theme" style="border-radius: 10px;" /><br />
+      <img src="mornin-preview.png" alt="Morning Theme" style="border-radius: 10px;" /><br />
       <b>Morning</b>
     </td>
     <td align="center" width="33%">
